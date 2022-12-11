@@ -23,16 +23,8 @@ document.addEventListener('DOMContentLoaded',() => {
            searchList.addEventListener('click',() => {
             fetch(`https://api.github.com/users/${details.login}/repos`,configurationObject)
             .then(response => response.json())
-            .then(repo => {
-            //  const l2=document.querySelector('#repos-list')
-            //  const h4=document.createElement('h4')
-            //   h4.textContent = `SEARCH RESULT`;
-            //   l2.appendChild(h4)
-            //   l2.appendChild(repo)
-              console.log(repo)
+            .then(repo =>console.log(repo))
             })
-
-           })
           
         }
      
